@@ -1,0 +1,21 @@
+.outlined-text{
+    color: white;
+    text-shadow:
+    1px 0 red,
+    1px 1px red,
+    0 1px red,
+    -1px 1px red,
+    -1px 0 red,
+    -1px -1px red,
+    0 -1px red,
+    1px -1px red;
+}
+
+.subtitle{
+    Font-weight:bold;
+    color:black;
+}
+
+.info{
+    color:black;
+}
