@@ -6,6 +6,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {MantineProvider} from "@mantine/core";
 import { theme } from './theme';
+import Signup from "./Signup";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -13,7 +14,8 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
       <MantineProvider theme={theme}>
-    <App />
+          <Signup/>
+          <App />
       </MantineProvider>
   </React.StrictMode>
 );
