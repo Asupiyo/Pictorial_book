@@ -1,6 +1,7 @@
 import React from 'react';
 import { auth, provider, signInWithPopup, signOut } from './firebase';
 import {useAuthContext} from "./context/AuthContext";
+import "./Signup.css";
 
 function GoogleLogin() {
     const{user} = useAuthContext();
@@ -26,11 +27,14 @@ function GoogleLogin() {
     return (
         <div>
             {user ? (
-                <button onClick={handleLogout}>ログアウト</button>
-            ): (
-                <button onClick={handleLogin}>Googleでログイン</button>
+                <>
+                    <button className="LoginButton" onClick={handleLogout}>ログアウト</button>
+                    <img className="showPhoto" src={user.photoURL} alt="User profile"/>
+                    <p className="child">{user.displayName}でログイン中</p>
+                </>
+            ) : (
+                <button className="LoginButton" onClick={handleLogin}>Googleでログイン</button>
             )}
-
         </div>
     );
 }

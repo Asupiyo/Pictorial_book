@@ -1,6 +1,6 @@
 .card {
   background-color: honeydew;
-    margin:5px 25%; /* 必要に応じて調整 */
+    /*margin:5px 25%; /* 必要に応じて調整 */
     border-radius: 8px; /* オプションで角を丸める */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* オプションで影をつける */
 }

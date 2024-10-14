@@ -13,14 +13,21 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <React.StrictMode>
-      <MantineProvider theme={theme}>
-          <AuthProvider>
-          <Signup/>
-          <App />
-          </AuthProvider>
-      </MantineProvider>
-  </React.StrictMode>
+    <React.StrictMode>
+        <MantineProvider theme={theme}>
+            <AuthProvider>
+                <div style={{ display: "flex", justifyContent: "space-between", width: "90%" }}>
+                    <div style={{ maxWidth: "170px", marginRight: "0px" }}>
+                        <Signup />
+                    </div>
+                    <div style={{ margin: "0 auto" }}>
+                        <App />
+                    </div>
+                </div>
+            </AuthProvider>
+        </MantineProvider>
+    </React.StrictMode>
+
 );
 
 // If you want to start measuring performance in your app, pass a function

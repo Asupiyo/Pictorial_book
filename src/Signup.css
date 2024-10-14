@@ -1,0 +1,22 @@
+.LoginButton{
+    box-shadow: 0 5px gray;
+    border-radius: 5px;
+    display: block;
+    box-sizing: border-box;
+    background: white;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.showPhoto{
+    width:  40px;       /* ※縦横を同値に */
+    height: 40px;       /* ※縦横を同値に */
+    border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+    background-position: center center;  /* 横長画像の左上を基準に表示 */
+}
+
+.child{
+    font-size: 13px;
+}
