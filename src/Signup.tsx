@@ -28,9 +28,9 @@ function GoogleLogin() {
         <div>
             {user ? (
                 <>
+                    <button className="LoginButton" onClick={handleLogout}>ログアウト</button>
                     <img className="showPhoto" src={user.photoURL} alt="User profile"/>
                     <p className="child">{user.displayName}でログイン中</p>
-                    <button className="LoginButton" onClick={handleLogout}>ログアウト</button>
                 </>
             ) : (
                 <button className="LoginButton" onClick={handleLogin}>Googleでログイン</button>
