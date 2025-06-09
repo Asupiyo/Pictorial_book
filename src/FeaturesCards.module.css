@@ -1,0 +1,44 @@
+.title {
+    font-size: rem(34px);
+    font-weight: 900;
+    color:black;
+    @media (max-width: $mantine-breakpoint-sm) {
+        font-size: rem(24px);
+    }
+}
+
+.black_img {
+    filter : brightness(0);
+}
+.description {
+    max-width: rem(600px);
+    margin: auto;
+    color:black;
+    &::after {
+        content: '';
+        display: block;
+        background-color: var(--mantine-color-blue-filled);
+        width: rem(45px);
+        height: rem(2px);
+        margin-top: var(--mantine-spacing-sm);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.card {
+    background-color: beige;
+    border: rem(1px) solid light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-5));
+    min-width: 200px; /* 現在より少し広く */
+}
+
+.cardTitle {
+    &::after {
+        content: '';
+        display: block;
+        background-color: var(--mantine-color-blue-filled);
+        width: rem(45px);
+        height: rem(2px);
+        margin-top: var(--mantine-spacing-sm);
+    }
+}

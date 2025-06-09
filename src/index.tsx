@@ -8,6 +8,7 @@ import {MantineProvider} from "@mantine/core";
 import { theme } from './theme';
 import Signup from "./Signup";
 import {AuthProvider} from "./context/AuthContext";
+import PokemonGallery from "./PokemonGallery";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -21,7 +22,7 @@ root.render(
                         <Signup />
                     </div>
                     <div style={{ margin: "0 auto" }}>
-                        <App />
+                        < PokemonGallery/>
                     </div>
                 </div>
             </AuthProvider>
