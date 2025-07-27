@@ -44,8 +44,12 @@ function GoogleLogin() {
             {user ? (
                 <>
                     <button className="LoginButton" onClick={handleLogout}>ログアウト</button>
-                    <img className="showPhoto" src={user.photoURL} alt="User profile"/>
-                    <p className="child">{user.displayName}でログイン中</p>
+                    <img
+                        className="showPhoto"
+                        src={user.photoURL || '/hiyoko.jpg'}
+                        alt="User profile"
+                    />
+                    <p className="child">{user.displayName}</p>
                 </>
             ) : (
                 <button className="LoginButton" onClick={handleLogin}>

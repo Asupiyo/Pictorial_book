@@ -27,9 +27,22 @@
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     background-color: beige;
     border: rem(1px) solid light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-5));
-    min-width: 200px; /* 現在より少し広く */
+    min-width: 200px;
+}
+
+.cardContent{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardButton{
+    margin-top: auto;
 }
 
 .cardTitle {
