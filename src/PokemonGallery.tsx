@@ -53,7 +53,7 @@ export function FeaturesCards() {
                 ) : (
                     <img src={pokemon.img} alt={pokemon.name} />
                 )}
-                <Text fz="lg" fw={500} c="black" className={classes.cardTitle} mt="md">
+                <Text fz="mg" fw={500} c="black" className={classes.cardTitle} mt="md">
                     {pokemon.number}.{pokemon.name}
                 </Text>
 
